@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIBRA | Cadastro </title>
+    <link href="../assets/styles/reset.css" rel="stylesheet">
+    <link href="../assets/styles/cadastro.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="../assets/images/unibra-logo.png" alt="logo da UNIBRA">
+    </header>
+    <main>
+        <div class="container">
+            <h1>
+                Cadastro
+            </h1>
+
+            <p>
+                Informe os dados abaixo para poder se cadastrar no
+                sistema.
+            </p>
+            <form id="formulario">
+                <label for="nome"> Nome completo </label>
+                <input type="text" name="nome" title="Preencha este campo!" required>
+
+                <label for="cpf"> Cpf </label>
+                <input type="text" name="cpf" required>
+
+                <label for="email"> Email </label>
+                <input type="email" name="email" required>
+
+                <label for="senha"> Senha </label>
+                <input type="password" name="senha"
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{8,12}$"
+                    title="A senha deve ter entre 6 à 12 caracteres, precisa conter pelo menos uma letra maiúscula, um número e não pode conter caracteres especiais."
+                    required>
+
+
+            </form>
+
+            <a href="./autenticacao.html"> <button class="enviar"> Cadastrar</button> </a>
+            <button class="voltar"> Voltar </button>
+
+            <div class="borda"></div>
+
+        </div>
+    </main>
+
+</body>
+
+</html>
